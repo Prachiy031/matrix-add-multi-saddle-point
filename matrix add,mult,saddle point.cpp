@@ -1,14 +1,12 @@
+
 /******************************************************************************
 o/p:
-
 Enter your choice 3
 Enter array elements a : 
 10 5 8
 3 4 5
 5 2 3
-
 5 is saddle point at position 0 1 
-
 *******************************************************************************/
 
 #include <stdio.h>
@@ -20,7 +18,19 @@ int main()
     int num;    //for choice
     p = &a[0][0];
     q = &b[0][0];
-     printf("\nEnter your choice ");
+     /*printf("\nEnter your choice ");
+    scanf("%d",&num);
+    printf("Enter array elements a : \n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",(p+(i*3)+j));
+        }
+    }*/
+    int cho;
+   do{
+       printf("\nEnter your choice ");
     scanf("%d",&num);
     printf("Enter array elements a : \n");
     for(i=0;i<3;i++)
@@ -30,7 +40,6 @@ int main()
             scanf("%d",(p+(i*3)+j));
         }
     }
-   
     switch(num)
     {
        case 1:               // for sum case
@@ -122,7 +131,9 @@ int main()
         break;
        
     } 
-    
+    printf("Do you want to continue?\n");
+    scanf("%d",&cho);
+   }while(cho==1);
     
     return 0;
 }
