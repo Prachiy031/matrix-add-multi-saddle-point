@@ -18,16 +18,7 @@ int main()
     int num;    //for choice
     p = &a[0][0];
     q = &b[0][0];
-     /*printf("\nEnter your choice ");
-    scanf("%d",&num);
-    printf("Enter array elements a : \n");
-    for(i=0;i<3;i++)
-    {
-        for(j=0;j<3;j++)
-        {
-            scanf("%d",(p+(i*3)+j));
-        }
-    }*/
+    
     int cho;
    do{
        printf("\nEnter your choice ");
